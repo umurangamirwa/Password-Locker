@@ -12,7 +12,7 @@ class User:
         self.username = username
         self.email = email
         self.password = password
-        contact_list = [] # Empty contact list
+        user_list = [] # Empty user list
  # Init method up here
     def save_user(self):
 
