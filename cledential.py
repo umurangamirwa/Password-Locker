@@ -16,7 +16,14 @@ def __init__(self,username,email,password):
  def save_cledential(self):
 
         '''
-        save_cledential method saves user objects into cledential_list
+        save_cledential method saves cledential objects into cledential_list
         '''
 
         Cledential.cledential_list.append(self)
+        def delete_cledential(self):
+
+        '''
+        delete_cledential method deletes a saved user from the cledential_list
+        '''
+
+        Cledential.cledential_list.remove(self)
