@@ -13,3 +13,10 @@ def __init__(self,username,email,password):
         self.password = password
         cledential_list = [] # Empty cledential list
  # Init method up here
+ def save_cledential(self):
+
+        '''
+        save_cledential method saves user objects into cledential_list
+        '''
+
+        Cledential.cledential_list.append(self)
