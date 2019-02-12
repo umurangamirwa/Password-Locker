@@ -50,15 +50,19 @@ def main():
             print("-"*10)
 
             print ("username ....")
+            print("-"*15)
             username = input()
                             
             print ("account ...")
+            print("-"*20)
             account = input()
 
             print("email ...")
+            print("-"*20)
             email = input()
 
             print("password ...")
+            print("-"*20)
             password = input()
 
                             
@@ -66,7 +70,7 @@ def main():
 
             save_users(create_user(username,account,email,password)) # create and save new user.
             print ('\n')
-            print("New User {username} {email} created")
+            print("New User "+username+ " " +email+" created")
             print ('\n')
 
         elif short_code == 'dc':
@@ -104,6 +108,9 @@ def main():
                         break
         else:
                         print("I really didn't get that. Please use the short codes")
+
+if __name__ == '__main__':
+    main()
 
 
     

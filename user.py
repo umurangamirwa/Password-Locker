@@ -5,11 +5,12 @@ class User:
 
     user_list = [] # Empty user list
 
-    def __init__(self,username,email,password):
+    def __init__(self,username,account,email,password):
 
       # docstring removed for simplicity
 
         self.username = username
+        self.account = account
         self.email = email
         self.password = password
         user_list = [] # Empty user list
