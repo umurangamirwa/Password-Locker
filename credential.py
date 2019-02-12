@@ -5,11 +5,12 @@ class Credential:
 
     credential_list = [] # Empty credential list
 
-    def __init__(self,username,email,password):
+    def __init__(self,username,account,email,password):
 
       # docstring removed for simplicity
 
         self.username = username
+        self.account = account
         self.email = email
         self.password = password
         credential_list = [] # Empty credential list
@@ -39,9 +40,9 @@ class Credential:
             password of person that matches the password.
         '''
 
-        for user in cls.credetial_list:
-            if credential.password == password:
-                return credential
+        for user in cls.credential_list:
+            if user.password == password:
+                return user
     @classmethod
     def credential_exist(cls,password):
         '''
