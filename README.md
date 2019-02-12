@@ -16,15 +16,11 @@ Smart phone/PC/laptop/Desktop or Tablet. A running network connection to the int
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT(BDD)
 
-This application is done so that it can help people to create an account maybe on facebook,instagram,twitter and so on,using their username,account they want to create in,email and password.so to use this stystem you just first enter your existing account and it's have some code symbolic which help you to create,display,to delete an account.
+This application is done so that it can help people to create an account maybe on facebook,instagram,twitter and so on,using their username,account they want to create in,email and password.so to use this stystem you just first enter your existing account and it's have some code symbolic which help you to create,display,to delete an account and after you run it in terminal.
 
 ## Technologies Used
 
 * Python
-
-## link to live site on GitHub Pages:
-
-You can click  here for more information:
 
 ## contacts:
 
