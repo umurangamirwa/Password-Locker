@@ -39,10 +39,10 @@ class Testuser(unittest.TestCase):
     def test_save_multiple_user(self):
             '''
             test_save_multiple_user to check if we can save multiple user
-            objects to our user_list
+            objects to our user list
             '''
             self.new_user.save_user()
-            test_user = user("mimy","mimy@gmail.com","654321") # new user
+            test_user = user("mimy","mimy@gmail.com","123456") # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list),2)
             # setup and class creation up here
@@ -59,7 +59,7 @@ class Testuser(unittest.TestCase):
             objects to our user_list
             '''
             self.new_user.save_user()
-            test_user = User("Motana","mota@gmail.com","1234567") # new user
+            test_user = User("mimy","mimy@gmail.com","123456") # new user
             test_user.save_user()
             self.assertEqual(len(User.user_list),2)
             # More tests above
@@ -68,7 +68,7 @@ class Testuser(unittest.TestCase):
             test_delete_user to test if we can remove a user from our user list
             '''
             self.new_user.save_user()
-            test_user = User("Akaliza","akaliza@gmail.com","12345678") # new user
+            test_user = User("Akaliza","akaliza@gmail.com","123456") # new user
             test_user.save_user()
 
             self.new_user.delete_user()# Deleting user object
@@ -79,10 +79,10 @@ class Testuser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Karabo","karabo@gmail.com","1312") # new user
+        test_user = User("mimy","mimy@gmail.com","123456") # new user
         test_user.save_user()
 
-        found_user = User.find_by_password("1312")
+        found_user = User.find_by_password("123456")
 
         self.assertEqual(found_user.email,test_user.email) 
     def test_user_exists(self):
@@ -91,7 +91,7 @@ class Testuser(unittest.TestCase):
         '''
 
         self.new_user.save_user()
-        test_user = User("jacky","jacky@gmail.com","1993") # new user
+        test_user = User("mimi","mimy@gmail.com","123456") # new user
         test_user.save_user()
 
         user_exists = User.user_exist("123456")
