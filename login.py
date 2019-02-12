@@ -28,5 +28,10 @@ def check_existing_users(password):
     Function that check if a user exists with that password and return a Boolean
     '''
     return User.user_exist(password)
+def display_users():
+    '''
+    Function that returns all the saved users
+    '''
+    return User.display_users()
 
     
