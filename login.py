@@ -23,5 +23,10 @@ def find_user(password):
     Function that finds a user by password and returns the user
     '''
     return User.find_by_password(password)
+def check_existing_users(password):
+    '''
+    Function that check if a user exists with that password and return a Boolean
+    '''
+    return User.user_exist(password)
 
     
