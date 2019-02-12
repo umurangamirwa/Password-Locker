@@ -15,7 +15,7 @@ class Testuser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_user = User("umurangamirwa","umurangamclaire@gmail.com","123456") # create user object
+        self.new_user = User("mimy","mimy@gmail.com","123456") # create user object
 
 
     def test_init(self):
@@ -23,8 +23,8 @@ class Testuser(unittest.TestCase):
         test_init test case to test if the object is initialized properly
         '''
 
-        self.assertEqual(self.new_user.username,"umurangamirwa")
-        self.assertEqual(self.new_user.email,"umurangamclaire@gmail.com")
+        self.assertEqual(self.new_user.username,"mimy")
+        self.assertEqual(self.new_user.email,"mimy@gmail.com")
         self.assertEqual(self.new_user.password,"123456")  
 
     def test_save_user(self):
@@ -68,7 +68,7 @@ class Testuser(unittest.TestCase):
             test_delete_user to test if we can remove a user from our user list
             '''
             self.new_user.save_user()
-            test_user = User("Akaliza","akaliza@gmail.com","123456") # new user
+            test_user = User("mimy","mimy@gmail.com","123456") # new user
             test_user.save_user()
 
             self.new_user.delete_user()# Deleting user object
