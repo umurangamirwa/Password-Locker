@@ -28,6 +28,13 @@ def check_existing_users(password):
     Function that check if a user exists with that password and return a Boolean
     '''
     return User.user_exist(password)
+
+def check_existing_users(characters):
+    """
+    Function that checks if a user exists with those characters and return a boolean
+    """
+    return User.user_exists(search_password)
+
 def display_users():
     '''
     Function that returns all the saved users
@@ -80,13 +87,27 @@ def main():
                 print('\n')
 
                 for user in display_users():
-                        print("{user.username} {user.email} .....{user.password}")
+                        print(f"{user.username} {user.account} {user.email} .....{user.password}")
 
                         print('\n')
             else:
                     print('\n')
                     print("You dont seem to have any users saved yet")
                     print('\n')
+
+        elif short_code == 'dl':
+            print("Enter the account name you want to delete")
+
+            del_account = input()
+            if check_existing_users(del_account):
+                search_del_credential = save_credentials(del_account)
+                del_credential(search_del_credential)
+                         
+                print(f"Deleted credentials of {del_account}")
+                        
+            else:
+                print("That credential does not exist")
+
 
         elif short_code == 'fc':
 
@@ -104,7 +125,7 @@ def main():
                         print("That user does not exist")
 
         elif short_code == "ex":
-                        print("Bye .......")
+                        print("Happy coding .......")
                         break
         else:
                         print("I really didn't get that. Please use the short codes")
