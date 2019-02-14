@@ -138,29 +138,30 @@ def main():
 
             save_credentials(create_credential(account_name,password))
             print('\n')
-            print(f"new password for {account_name} : {password} created")
+            print(f"new password for" +account_name+ "+ " +password+ "created")
             print('\n') 
 
         elif short_code=='dp':
-            if display_credentials():
-                print("here is a list of all your passwords")
-                print('\n')
+            # if display_credentials():
+            #     print("here is a list of all your passwords")
+            #     print('\n')
 
-                for credential in display_credentials():
-                    print(f"{credential.account_name} {credential.password}")
-                    print('\n')
-            else:
-                print('\n')
-                print("You dont seem to have any password saved yet")
-                print('\n')
+            #     for Credential in display_credentials():
+            #         print(f"{Credential.username} {Credential.password}")
+            #         print('\n')
+            # else:
+            #     print('\n')
+            #     print("You dont seem to have any password saved yet")
+            #     print('\n')
+            print("this is your user" +account_name+ "+ " +password)
 
 
         elif short_code == 'fp':
-            print("enter the name of the accoutn you want to search password for:")
+            print("enter the name of the account you want to search password for:")
             search_name=input()
             if check_existing_credentials(search_name):
                 search_name=find_credential(search_name)
-                print(f"{search_name.account_name} {search_name.password}")
+                print(f" {search_name.password}")
                 print('-'*20)
 
                 print(f"account name ........ {search_name.account_name}")
