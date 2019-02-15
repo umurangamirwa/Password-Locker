@@ -10,13 +10,19 @@ This application is done so that it can help people to create an account maybe o
 
 ## Setup/Installation Requirements
 
-You would need the following to access the website:
+To start using this project use the following commands:
 
-Smart phone/PC/laptop/Desktop or Tablet. A running network connection to the internet(either wireless or ethernet). A web browser(Chrome is most recommendable).
+* git clone https://github.com/umurangamirwa/Password-Locker.git
+* cd Password-Locker
+To run this program
+
+run this command lines in your terminal:
+* chmod +x run.py
+* ./login.py
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT(BDD)
 
-This application is done so that it can help people to create an account maybe on facebook,instagram,twitter and so on,using their username,account they want to create in,email and password.so to use this stystem you just first enter your existing account and it's have some code symbolic which help you to create,display,to delete an account and after you run it in terminal.
+This application is done so that it can help people to create an account maybe facebook account,instagram account,twitter account and so on,using their username,account name to create first her/his account they want to create and also email and password.so to use this stystem you just first enter your existing account and it have some code symbolic which help you to create the new account using(cp),then you login your existing account using(lg),display the account you have using(dp),u can generate your password using(gp key word)to delete an account you use(depl) and ex key word to exit and continues running your project, after you supposed to run it in terminal,no need of creating branch.
 
 ## Technologies Used
 
@@ -24,9 +30,9 @@ This application is done so that it can help people to create an account maybe o
 
 ## contacts:
 
-Email: umurangamclaire@gmail.com
-Phone: 0781055307
-Contact address:Rwanda
+* Email: umurangamclaire@gmail.com
+* Phone: 0781055307
+* Contact address:Rwanda
 ## License
 
 MIT Copyright (c) 2019 Marie claire
