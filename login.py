@@ -149,11 +149,12 @@ def main():
             #     for Credential in display_credentials():
             #         print(f"{Credential.username} {Credential.password}")
             #         print('\n')
-            # else:
+            # else:f
             #     print('\n')
             #     print("You dont seem to have any password saved yet")
             #     print('\n')
-            print("this is your user" +account_name+ "+ " +password)
+            for Credential in display_credentials():
+                print("this is your user"+" " +account_name+ " " +password)
 
 
         elif short_code == 'fp':
